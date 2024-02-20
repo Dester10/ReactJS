@@ -1,0 +1,52 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.background {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  z-index: -100;
+  top: 0;
+  left: 0;
+}
+
+.controllers {
+  background-color: cadetblue;
+  width: 300px;
+  max-width: 95%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes disko {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
